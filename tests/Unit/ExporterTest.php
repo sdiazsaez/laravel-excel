@@ -25,7 +25,7 @@ class ExporterTest extends TestCase
         $this->seed($itemsToSeed);
 
         //Export the file
-        $exporter = $this->app->make('cyber-duck/exporter')->make('CSV');
+        $exporter = $this->app->make('cyber-duck/exporter')->make('Csv');
         $exporter->load(Item::all())->save(self::FILE);
 
         //Read the content
@@ -100,7 +100,7 @@ class ExporterTest extends TestCase
         $this->seed($itemsToSeed);
 
         //Export the file
-        $exporter = $this->app->make('cyber-duck/exporter')->make('CSV');
+        $exporter = $this->app->make('cyber-duck/exporter')->make('Csv');
         $exporter->loadQuery(Item::getQuery())->save(self::FILE);
 
         //Read the content
@@ -126,7 +126,7 @@ class ExporterTest extends TestCase
         $this->seed($itemsToSeed);
 
         //Export the file
-        $exporter = $this->app->make('cyber-duck/exporter')->make('CSV');
+        $exporter = $this->app->make('cyber-duck/exporter')->make('Csv');
         $exporter->loadQuery(Item::getQuery())->setChunk(2)->save(self::FILE);
 
         //Read the content
@@ -152,7 +152,7 @@ class ExporterTest extends TestCase
         $this->seed($itemsToSeed);
 
         //Export the file
-        $exporter = $this->app->make('cyber-duck/exporter')->make('CSV');
+        $exporter = $this->app->make('cyber-duck/exporter')->make('Csv');
         $exporter->setSerialiser(new FirstColumnOnlySerialiser())->load(Item::all())->save(self::FILE);
 
         //Read the content

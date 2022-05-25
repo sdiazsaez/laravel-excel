@@ -8,7 +8,7 @@ class ImporterFactoryTest extends TestCase
     public function test_factory_can_create_csv()
     {
         $factory = new ImporterFactory();
-        $spreadsheet = $factory->make('CSV');
+        $spreadsheet = $factory->make('Csv');
         $this->assertInstanceOf(
             \Cyberduck\LaravelExcel\Importer\Csv::class,
             $spreadsheet
@@ -49,7 +49,7 @@ class ImporterFactoryTest extends TestCase
     public function test_exporter_factory_can_create_csv()
     {
         $factory = new ExporterFactory();
-        $spreadsheet = $factory->make('CSV');
+        $spreadsheet = $factory->make('Csv');
         $this->assertInstanceOf(
             \Cyberduck\LaravelExcel\Exporter\Csv::class,
             $spreadsheet
