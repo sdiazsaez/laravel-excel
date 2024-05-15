@@ -1,14 +1,14 @@
 # Laravel Excel
-[![Latest Stable Version](https://poser.pugx.org/cyber-duck/laravel-excel/v/stable)](https://packagist.org/packages/cyber-duck/laravel-excel)
-[![Total Downloads](https://poser.pugx.org/cyber-duck/laravel-excel/downloads)](https://packagist.org/packages/cyber-duck/laravel-excel)
-[![License](https://poser.pugx.org/cyber-duck/laravel-excel/license)](https://raw.githubusercontent.com/Cyber-Duck/laravel-excel/master/LICENSE)
+[![Latest Stable Version](https://poser.pugx.org/technofelia/laravel-excel/v/stable)](https://packagist.org/packages/technofelia/laravel-excel)
+[![Total Downloads](https://poser.pugx.org/technofelia/laravel-excel/downloads)](https://packagist.org/packages/technofelia/laravel-excel)
+[![License](https://poser.pugx.org/technofelia/laravel-excel/license)](https://raw.githubusercontent.com/technofelia/laravel-excel/master/LICENSE)
 
 Exporting and importing Excel, CSV and OpenOffice stylesheets using Eloquent Collections and Query Builders in Laravel (5.* and 4.*).  
 It's based on [box/spout](https://github.com/box/spout).
 
 Author: [Simone Todaro](https://github.com/SimoTod)  
 Contributors: [Clément Blanco](https://github.com/Claymm)  
-Made with :heart: by [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)
+Made with :heart: by [technofelia Ltd](http://www.technofelia.co.uk)
 
 [Installation](#installation)  
 [Export Excel](#export-excel)  
@@ -18,7 +18,7 @@ Made with :heart: by [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)
 ## Installation
 Use composer to download the package:
 ```
-composer require cyber-duck/laravel-excel
+composer require technofelia/laravel-excel
 ```
 
 ### Laravel 4.x
