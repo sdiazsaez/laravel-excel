@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel\Factory;
+namespace Technofelia\LaravelExcel\Factory;
 
 use ReflectionClass;
 
@@ -7,7 +7,7 @@ class ImporterFactory
 {
     public function make($type)
     {
-        $class = new ReflectionClass('Cyberduck\\LaravelExcel\\Importer\\'.$type);
+        $class = new ReflectionClass('Technofelia\\LaravelExcel\\Importer\\'.$type);
         return $class->newInstanceArgs(array());
     }
 }

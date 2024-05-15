@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cyberduck\\LaravelExcel\\": "src"
+            "Technofelia\\LaravelExcel\\": "src"
         }
     },
     "autoload-dev": {

@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel;
+namespace Technofelia\LaravelExcel;
 
 use Illuminate\Support\Facades\Facade;
 

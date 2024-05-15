@@ -1,6 +1,6 @@
 <?php
 
-use Cyberduck\LaravelExcel\Factory\ImporterFactory;
+use Technofelia\LaravelExcel\Factory\ImporterFactory;
 
 abstract class ImporterTest extends TestCase
 {

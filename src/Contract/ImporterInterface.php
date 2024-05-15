@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel\Contract;
+namespace Technofelia\LaravelExcel\Contract;
 
 use Illuminate\Database\Eloquent\Model;
 

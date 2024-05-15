@@ -1,6 +1,6 @@
 <?php
 
-use Cyberduck\LaravelExcel\Contract\SerialiserInterface;
+use Technofelia\LaravelExcel\Contract\SerialiserInterface;
 
 class FirstColumnOnlySerialiser implements SerialiserInterface
 {

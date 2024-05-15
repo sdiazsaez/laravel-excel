@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel\Importer;
+namespace Technofelia\LaravelExcel\Importer;
 
 use Box\Spout\Common\Type;
 use Box\Spout\Reader\Common\Creator\ReaderEntityFactory;

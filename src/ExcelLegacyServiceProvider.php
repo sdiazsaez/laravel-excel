@@ -1,8 +1,8 @@
 <?php
-namespace Cyberduck\LaravelExcel;
+namespace Technofelia\LaravelExcel;
 
-use Cyberduck\LaravelExcel\Factory\ExporterFactory;
-use Cyberduck\LaravelExcel\Factory\ImporterFactory;
+use Technofelia\LaravelExcel\Factory\ExporterFactory;
+use Technofelia\LaravelExcel\Factory\ImporterFactory;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
@@ -12,8 +12,8 @@ class ExcelLegacyServiceProvider extends ServiceProvider
     public function boot()
     {
         $loader = AliasLoader::getInstance();
-        $loader->alias('Exporter', '\Cyberduck\LaravelExcel\ExporterFacade');
-        $loader->alias('Importer', '\Cyberduck\LaravelExcel\ImporterFacade');
+        $loader->alias('Exporter', '\Technofelia\LaravelExcel\ExporterFacade');
+        $loader->alias('Importer', '\Technofelia\LaravelExcel\ImporterFacade');
     }
 
     public function register()

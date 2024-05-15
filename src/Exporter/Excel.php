@@ -1,5 +1,5 @@
 <?php
-namespace Cyberduck\LaravelExcel\Exporter;
+namespace Technofelia\LaravelExcel\Exporter;
 
 use Box\Spout\Common\Type;
 use Box\Spout\Writer\Common\Creator\WriterEntityFactory;

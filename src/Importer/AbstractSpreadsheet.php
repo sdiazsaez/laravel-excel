@@ -1,10 +1,10 @@
 <?php
-namespace Cyberduck\LaravelExcel\Importer;
+namespace Technofelia\LaravelExcel\Importer;
 
 use Illuminate\Database\Eloquent\Model;
-use Cyberduck\LaravelExcel\Parser\BasicParser;
-use Cyberduck\LaravelExcel\Contract\ParserInterface;
-use Cyberduck\LaravelExcel\Contract\ImporterInterface;
+use Technofelia\LaravelExcel\Parser\BasicParser;
+use Technofelia\LaravelExcel\Contract\ParserInterface;
+use Technofelia\LaravelExcel\Contract\ImporterInterface;
 
 abstract class AbstractSpreadsheet implements ImporterInterface
 {
