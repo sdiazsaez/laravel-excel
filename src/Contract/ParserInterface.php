@@ -1,5 +1,5 @@
 <?php
-namespace Technofelia\LaravelExcel\Contract;
+namespace Cyberduck\LaravelExcel\Contract;
 
 interface ParserInterface
 {

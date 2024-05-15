@@ -1,8 +1,8 @@
 <?php
-namespace Technofelia\LaravelExcel\Parser;
+namespace Cyberduck\LaravelExcel\Parser;
 
 use RuntimeException;
-use Technofelia\LaravelExcel\Contract\ParserInterface;
+use Cyberduck\LaravelExcel\Contract\ParserInterface;
 
 class BasicParser implements ParserInterface
 {

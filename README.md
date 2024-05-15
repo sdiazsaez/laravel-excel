@@ -1,14 +1,14 @@
 # Laravel Excel
-[![Latest Stable Version](https://poser.pugx.org/technofelia/laravel-excel/v/stable)](https://packagist.org/packages/technofelia/laravel-excel)
-[![Total Downloads](https://poser.pugx.org/technofelia/laravel-excel/downloads)](https://packagist.org/packages/technofelia/laravel-excel)
-[![License](https://poser.pugx.org/technofelia/laravel-excel/license)](https://raw.githubusercontent.com/technofelia/laravel-excel/master/LICENSE)
+[![Latest Stable Version](https://poser.pugx.org/cyber-duck/laravel-excel/v/stable)](https://packagist.org/packages/cyber-duck/laravel-excel)
+[![Total Downloads](https://poser.pugx.org/cyber-duck/laravel-excel/downloads)](https://packagist.org/packages/cyber-duck/laravel-excel)
+[![License](https://poser.pugx.org/cyber-duck/laravel-excel/license)](https://raw.githubusercontent.com/Cyber-Duck/laravel-excel/master/LICENSE)
 
 Exporting and importing Excel, CSV and OpenOffice stylesheets using Eloquent Collections and Query Builders in Laravel (5.* and 4.*).  
 It's based on [box/spout](https://github.com/box/spout).
 
 Author: [Simone Todaro](https://github.com/SimoTod)  
 Contributors: [Clément Blanco](https://github.com/Claymm)  
-Made with :heart: by [technofelia Ltd](http://www.technofelia.co.uk)
+Made with :heart: by [Cyber-Duck Ltd](http://www.cyber-duck.co.uk)
 
 [Installation](#installation)  
 [Export Excel](#export-excel)  
@@ -18,7 +18,7 @@ Made with :heart: by [technofelia Ltd](http://www.technofelia.co.uk)
 ## Installation
 Use composer to download the package:
 ```
-composer require technofelia/laravel-excel
+composer require cyber-duck/laravel-excel
 ```
 
 ### Laravel 4.x
@@ -27,7 +27,7 @@ Register the service provider in `config/app.php` by adding this line to provide
 
 ```php
 'providers' => [
-	Technofelia\LaravelExcel\ExcelLegacyServiceProvider::class,
+	Cyberduck\LaravelExcel\ExcelLegacyServiceProvider::class,
 ],
 ```
 
@@ -37,7 +37,7 @@ Register the service provider in `config/app.php` by adding this line to provide
 
 ```php
 'providers' => [
-	Technofelia\LaravelExcel\ExcelServiceProvider::class,
+	Cyberduck\LaravelExcel\ExcelServiceProvider::class,
 ],
 ```
 
@@ -93,7 +93,7 @@ return $excel->save($yourFileNameWithPath);
 By default, every element of the Collection becomes a row and every unprotected field of the Model becomes a cell.  
 No headers row is printed.
 
-To change this behaviour, create a class extending *Technofelia\LaravelExcel\Contract\SerialiserInterface*, implement the methods *getHeaderRow()* and *getData(Model $data)* and set this class on the excel object usint *setSerialiser()*.
+To change this behaviour, create a class extending *Cyberduck\LaravelExcel\Contract\SerialiserInterface*, implement the methods *getHeaderRow()* and *getData(Model $data)* and set this class on the excel object usint *setSerialiser()*.
 ```
 $serialiser = new CustomSerialiser();
 $excel = Exporter::make('Excel');
@@ -110,7 +110,7 @@ Example
 namespace App\Serialisers;
 
 use Illuminate\Database\Eloquent\Model;
-use Technofelia\LaravelExcel\Contract\SerialiserInterface;
+use Cyberduck\LaravelExcel\Contract\SerialiserInterface;
 
 class ExampleSerialiser implements SerialiserInterface
 {
@@ -170,14 +170,14 @@ $collection = $excel->getCollection();
 //dd($collection)
 ```
 
-To import each row in an Eloquent model, create a class extending *Technofelia\LaravelExcel\Contract\ParserInterface* and implement the methods *transform($row)*.  
+To import each row in an Eloquent model, create a class extending *Cyberduck\LaravelExcel\Contract\ParserInterface* and implement the methods *transform($row)*.  
 
 Example
 ```
 namespace App\Parsers;
 
 use App\Models\YourModel;
-use Technofelia\LaravelExcel\Contract\ParserInterface;
+use Cyberduck\LaravelExcel\Contract\ParserInterface;
 
 class ExampleParser implements ParserInterface
 {

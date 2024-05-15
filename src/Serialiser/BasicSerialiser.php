@@ -1,8 +1,8 @@
 <?php
-namespace Technofelia\LaravelExcel\Serialiser;
+namespace Cyberduck\LaravelExcel\Serialiser;
 
 use Illuminate\Database\Eloquent\Model;
-use Technofelia\LaravelExcel\Contract\SerialiserInterface;
+use Cyberduck\LaravelExcel\Contract\SerialiserInterface;
 
 class BasicSerialiser implements SerialiserInterface
 {
