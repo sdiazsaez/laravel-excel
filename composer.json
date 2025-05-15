@@ -12,15 +12,15 @@
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
+        "php": ">=7.3",
         "box/spout": "^3.3",
-        "illuminate/database": "^6.0.0|^7.0.0|^8.0.0|^9.0.0|^10.0.0",
-        "illuminate/support": "^6.0.0|^7.0.0|^8.0.0|^9.0.0|^10.0.0"
+        "illuminate/database": "*",
+        "illuminate/support": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5.0",
+        "phpunit/phpunit": "*",
         "phpspec/phpspec": "^7.0.0",
-        "laravel/laravel": "^6.0.0|^7.0.0|^8.0.0|^9.0.0|^10.0.0"
+        "laravel/laravel": "*"
     },
     "autoload": {
         "psr-4": {
